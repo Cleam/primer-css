@@ -48,19 +48,19 @@ Primer CSS 的令牌分为三个层级：
 
 ```mermaid
 graph TB
-    subgraph "第1层：原始令牌（Primitive Tokens）"
+    subgraph "第1层：原始令牌 Primitive Tokens"
         P1["$blue-500: #0969da"]
         P2["$gray-900: #24292f"]
         P3["$scale-4: 16px"]
     end
 
-    subgraph "第2层：语义令牌（Semantic Tokens）"
-        S1["--fgColor-default<br/>默认前景色"]
-        S2["--bgColor-accent-emphasis<br/>强调色背景"]
-        S3["$spacer-3: 16px<br/>中等间距"]
+    subgraph "第2层：语义令牌 Semantic Tokens"
+        S1["--fgColor-default 默认前景色"]
+        S2["--bgColor-accent-emphasis 强调色背景"]
+        S3["$spacer-3: 16px 中等间距"]
     end
 
-    subgraph "第3层：组件令牌（Component Tokens）"
+    subgraph "第3层：组件令牌 Component Tokens"
         C1[".btn 的 padding"]
         C2[".Label 的 font-size"]
         C3[".Box 的 border-radius"]
@@ -116,12 +116,12 @@ $spacer-6: 40px;   // 极大间距
 
 ```mermaid
 graph LR
-    A["4px 基础单位"] --> B["4 × 1 = 4px<br/>$spacer-1"]
-    A --> C["4 × 2 = 8px<br/>$spacer-2"]
-    A --> D["4 × 4 = 16px<br/>$spacer-3"]
-    A --> E["4 × 6 = 24px<br/>$spacer-4"]
-    A --> F["4 × 8 = 32px<br/>$spacer-5"]
-    A --> G["4 × 10 = 40px<br/>$spacer-6"]
+    A["4px 基础单位"] --> B["4x1 = 4px, $spacer-1"]
+    A --> C["4x2 = 8px, $spacer-2"]
+    A --> D["4x4 = 16px, $spacer-3"]
+    A --> E["4x6 = 24px, $spacer-4"]
+    A --> F["4x8 = 32px, $spacer-5"]
+    A --> G["4x10 = 40px, $spacer-6"]
 ```
 
 > 🍳 **通俗比喻**：音乐有节拍（4/4 拍、3/4 拍），间距系统也有"节拍"。4px 就是 Primer 的基础节拍。所有间距都是这个节拍的倍数，所以页面看起来"有韵律感"。如果某个地方用了 13px 的间距，就像音乐突然跑调了——违和感很强。
@@ -212,13 +212,13 @@ $button-color: var(--bgColor-accent-emphasis);
 
 ```mermaid
 graph LR
-    A[颜色令牌名] --> B["属性<br/>fg/bg/border"]
-    A --> C["角色<br/>accent/success/danger"]
-    A --> D["状态<br/>default/muted/emphasis"]
+    A["颜色令牌名"] --> B["属性: fg/bg/border"]
+    A --> C["角色: accent/success/danger"]
+    A --> D["状态: default/muted/emphasis"]
 
-    B --> E["fgColor-accent<br/>强调色前景"]
+    B --> E["fgColor-accent 强调色前景"]
     C --> E
-    B --> F["bgColor-danger-emphasis<br/>危险色强调背景"]
+    B --> F["bgColor-danger-emphasis 危险色强调背景"]
     D --> F
 ```
 
@@ -247,9 +247,9 @@ Primer CSS 的设计令牌来自另一个包 `@primer/primitives`：
 
 ```mermaid
 graph LR
-    A["@primer/primitives<br/>（令牌定义）"] -->|"导入"| B["@primer/css<br/>（CSS 实现）"]
-    A -->|"也被使用于"| C["@primer/react<br/>（React 组件）"]
-    A -->|"也被使用于"| D["Figma 插件<br/>（设计工具）"]
+    A["primer/primitives - 令牌定义"] -->|"导入"| B["primer/css - CSS 实现"]
+    A -->|"也被使用于"| C["primer/react - React 组件"]
+    A -->|"也被使用于"| D["Figma 插件 - 设计工具"]
 
     style A fill:#8250df,stroke:#6e40c9,color:#fff
 ```
@@ -286,9 +286,9 @@ graph LR
 
 ```mermaid
 graph TB
-    A{"这个值需要<br/>随主题变化吗？"}
-    A -->|"是（颜色类）"| B["用 CSS 自定义属性<br/>var(--xxx)"]
-    A -->|"否（间距、字号等）"| C["用 SCSS 变量<br/>$xxx"]
+    A{"这个值需要随主题变化吗？"}
+    A -->|"是 - 颜色类"| B["用 CSS 自定义属性 var()"]
+    A -->|"否 - 间距、字号等"| C["用 SCSS 变量 $xxx"]
 
     style B fill:#0969da,stroke:#0550ae,color:#fff
     style C fill:#2ea44f,stroke:#218838,color:#fff

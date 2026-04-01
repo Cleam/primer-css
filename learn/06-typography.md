@@ -215,10 +215,10 @@ $font-weight-light: 300;      // 细体
 
 ```mermaid
 graph TB
-    A[Bold 600] --> A1[标题<br/>重要信息<br/>强调内容]
-    B[Semibold 500] --> B1[副标题<br/>导航项<br/>标签]
-    C[Normal 400] --> C1[正文<br/>描述文字<br/>表单输入]
-    D[Light 300] --> D1[营销大标题<br/>展示性文字]
+    A["Bold 600"] --> A1["标题, 重要信息, 强调内容"]
+    B["Semibold 500"] --> B1["副标题, 导航项, 标签"]
+    C["Normal 400"] --> C1["正文, 描述文字, 表单输入"]
+    D["Light 300"] --> D1["营销大标题, 展示性文字"]
 
     style A fill:#24292f,stroke:#1b1f24,color:#fff
     style B fill:#57606a,stroke:#424a53,color:#fff
@@ -238,13 +238,13 @@ Primer CSS 的大标题在移动端和桌面端有不同的字号：
 
 ```mermaid
 graph LR
-    subgraph "移动端（< 768px）"
+    subgraph "移动端 小于768px"
         M1["h1: 26px"]
         M2["h2: 22px"]
         M3["h3: 18px"]
     end
 
-    subgraph "桌面端（≥ 768px）"
+    subgraph "桌面端 大于等于768px"
         D1["h1: 32px"]
         D2["h2: 24px"]
         D3["h3: 20px"]

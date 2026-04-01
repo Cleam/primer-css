@@ -72,13 +72,13 @@ import '@primer/css/dist/product.css';
 
 ```mermaid
 graph TB
-    A{你需要什么?} -->|全部样式| B["@import '@primer/css/index.scss'"]
-    A -->|仅核心样式| C["@import '@primer/css/core/index.scss'"]
-    A -->|特定组件| D[按需引入]
+    A{"你需要什么?"} -->|"全部样式"| B["import primer/css/index.scss"]
+    A -->|"仅核心样式"| C["import primer/css/core/index.scss"]
+    A -->|"特定组件"| D["按需引入"]
 
-    D --> D1["1. @import 'support/index.scss'"]
-    D1 --> D2["2. @import '你需要的组件/index.scss'"]
-    D2 --> D3["3. @import 'utilities/index.scss'"]
+    D --> D1["1. import support/index.scss"]
+    D1 --> D2["2. import 你需要的组件/index.scss"]
+    D2 --> D3["3. import utilities/index.scss"]
 
     style B fill:#cf222e,stroke:#a40e26,color:#fff
     style C fill:#bf8700,stroke:#9a6700,color:#fff

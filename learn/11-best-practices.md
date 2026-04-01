@@ -16,8 +16,8 @@
 
 ```mermaid
 graph LR
-    A["完整引入<br/>primer.css<br/>~300KB+"] --> B["按 Bundle 引入<br/>core.css<br/>~150KB"]
-    B --> C["按组件引入<br/>buttons + forms<br/>~30KB"]
+    A["完整引入 primer.css 约300KB+"] --> B["按 Bundle 引入 core.css 约150KB"]
+    B --> C["按组件引入 buttons+forms 约30KB"]
 
     style A fill:#cf222e,stroke:#a40e26,color:#fff
     style B fill:#bf8700,stroke:#9a6700,color:#fff
@@ -419,14 +419,14 @@ defineProps<{
 
 ```mermaid
 graph TB
-    A[学完本教程] --> B{你的角色?}
-    B -->|前端开发者| C[学习 @primer/react]
-    B -->|设计师| D[研究 Figma 设计资源]
+    A["学完本教程"] --> B{"你的角色?"}
+    B -->|"前端开发者"| C["学习 primer/react"]
+    B -->|"设计师"| D["研究 Figma 设计资源"]
 
-    C --> E[构建自己的项目]
-    D --> F[设计自己的组件]
+    C --> E["构建自己的项目"]
+    D --> F["设计自己的组件"]
 
-    E --> G[贡献开源代码]
+    E --> G["贡献开源代码"]
     F --> G
 ```
 

@@ -34,11 +34,11 @@
 
 ```mermaid
 graph TB
-    A{这个样式...} --> B["有明确的 UI 含义？<br/>（是一个按钮、标签、卡片？）"]
-    A --> C["只是调整一个属性？<br/>（加个间距、改个颜色？）"]
+    A{"这个样式..."} --> B["有明确的 UI 含义？如按钮、标签、卡片"]
+    A --> C["只是调整一个属性？如加间距、改颜色"]
 
-    B --> D["用组件类<br/>.btn .Label .Box"]
-    C --> E["用工具类<br/>.p-3 .color-fg-muted .d-flex"]
+    B --> D["用组件类: .btn .Label .Box"]
+    C --> E["用工具类: .p-3 .color-fg-muted .d-flex"]
 
     style D fill:#0969da,stroke:#0550ae,color:#fff
     style E fill:#2ea44f,stroke:#218838,color:#fff
@@ -305,10 +305,10 @@ graph TB
 
 ```mermaid
 graph LR
-    A["基础类<br/>.d-flex"] --> B["+sm 后缀<br/>.d-sm-flex<br/>≥544px"]
-    B --> C["+md 后缀<br/>.d-md-flex<br/>≥768px"]
-    C --> D["+lg 后缀<br/>.d-lg-flex<br/>≥1012px"]
-    D --> E["+xl 后缀<br/>.d-xl-flex<br/>≥1280px"]
+    A["基础类 .d-flex"] --> B["+sm .d-sm-flex 544px+"]
+    B --> C["+md .d-md-flex 768px+"]
+    C --> D["+lg .d-lg-flex 1012px+"]
+    D --> E["+xl .d-xl-flex 1280px+"]
 ```
 
 ---

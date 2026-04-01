@@ -40,18 +40,18 @@ mindmap
 ```mermaid
 graph TB
     subgraph "浅色系"
-        L1["☀️ light<br/>默认浅色"]
-        L2["☀️ light_high_contrast<br/>浅色高对比度"]
-        L3["☀️ light_colorblind<br/>浅色色盲友好"]
-        L4["☀️ light_tritanopia<br/>浅色蓝黄色盲"]
+        L1["light - 默认浅色"]
+        L2["light_high_contrast - 浅色高对比度"]
+        L3["light_colorblind - 浅色色盲友好"]
+        L4["light_tritanopia - 浅色蓝黄色盲"]
     end
 
     subgraph "暗色系"
-        D1["🌙 dark<br/>默认暗色"]
-        D2["🌙 dark_dimmed<br/>暗色柔和"]
-        D3["🌙 dark_high_contrast<br/>暗色高对比度"]
-        D4["🌙 dark_colorblind<br/>暗色色盲友好"]
-        D5["🌙 dark_tritanopia<br/>暗色蓝黄色盲"]
+        D1["dark - 默认暗色"]
+        D2["dark_dimmed - 暗色柔和"]
+        D3["dark_high_contrast - 暗色高对比度"]
+        D4["dark_colorblind - 暗色色盲友好"]
+        D5["dark_tritanopia - 暗色蓝黄色盲"]
     end
 ```
 

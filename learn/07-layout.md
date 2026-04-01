@@ -154,19 +154,19 @@ Flexbox 是 Primer CSS 的核心布局方式。
 graph TB
     subgraph "主轴对齐 justify-content"
         direction LR
-        JA["flex-justify-start<br/>|■ ■ ■　　　|"]
-        JB["flex-justify-center<br/>|　　■ ■ ■　　|"]
-        JC["flex-justify-end<br/>|　　　■ ■ ■|"]
-        JD["flex-justify-between<br/>|■　　■　　■|"]
-        JE["flex-justify-around<br/>| ■　 ■　 ■ |"]
+        JA["flex-justify-start"]
+        JB["flex-justify-center"]
+        JC["flex-justify-end"]
+        JD["flex-justify-between"]
+        JE["flex-justify-around"]
     end
 
     subgraph "交叉轴对齐 align-items"
         direction LR
-        AA["flex-items-start<br/>顶部对齐"]
-        AB["flex-items-center<br/>居中对齐"]
-        AC["flex-items-end<br/>底部对齐"]
-        AD["flex-items-stretch<br/>拉伸填满"]
+        AA["flex-items-start 顶部对齐"]
+        AB["flex-items-center 居中对齐"]
+        AC["flex-items-end 底部对齐"]
+        AD["flex-items-stretch 拉伸填满"]
     end
 ```
 
@@ -280,10 +280,10 @@ Primer CSS 定义了以下断点：
 
 ```mermaid
 graph LR
-    A["基础样式<br/>（移动端优先）"] -->|"+sm"| B["544px+<br/>微调"]
-    B -->|"+md"| C["768px+<br/>双列布局"]
-    C -->|"+lg"| D["1012px+<br/>三列布局"]
-    D -->|"+xl"| E["1280px+<br/>最大宽度"]
+    A["基础样式 - 移动端优先"] -->|"+sm"| B["544px+ 微调"]
+    B -->|"+md"| C["768px+ 双列布局"]
+    C -->|"+lg"| D["1012px+ 三列布局"]
+    D -->|"+xl"| E["1280px+ 最大宽度"]
 
     style A fill:#2ea44f,stroke:#218838,color:#fff
 ```

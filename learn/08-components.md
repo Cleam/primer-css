@@ -46,15 +46,15 @@
 
 ```mermaid
 graph TB
-    A{用户要做什么?} --> B[主要操作]
-    A --> C[次要操作]
-    A --> D[危险操作]
-    A --> E[不重要的操作]
+    A{"用户要做什么?"} --> B["主要操作"]
+    A --> C["次要操作"]
+    A --> D["危险操作"]
+    A --> E["不重要的操作"]
 
-    B --> B1["btn-primary<br/>提交、保存、确认"]
-    C --> C1["btn / btn-outline<br/>取消、返回"]
-    D --> D1["btn-danger<br/>删除、移除"]
-    E --> E1["btn-invisible<br/>折叠、更多"]
+    B --> B1["btn-primary: 提交、保存、确认"]
+    C --> C1["btn / btn-outline: 取消、返回"]
+    D --> D1["btn-danger: 删除、移除"]
+    E --> E1["btn-invisible: 折叠、更多"]
 
     style B1 fill:#2ea44f,stroke:#218838,color:#fff
     style C1 fill:#f6f8fa,stroke:#d0d7de

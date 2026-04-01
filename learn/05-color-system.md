@@ -51,7 +51,7 @@
 
 ```mermaid
 graph TB
-    subgraph "第1层：色板（Scale Colors）"
+    subgraph "第1层：色板 Scale Colors"
         direction LR
         SC1["blue-0: #ddf4ff"]
         SC2["blue-3: #218bff"]
@@ -59,19 +59,19 @@ graph TB
         SC4["blue-9: #002155"]
     end
 
-    subgraph "第2层：功能色（Functional Colors）"
+    subgraph "第2层：功能色 Functional Colors"
         direction LR
-        FC1["accent 强调色<br/>(通常是蓝色)"]
-        FC2["success 成功色<br/>(通常是绿色)"]
-        FC3["danger 危险色<br/>(通常是红色)"]
-        FC4["attention 警告色<br/>(通常是黄色)"]
+        FC1["accent 强调色 - 通常是蓝色"]
+        FC2["success 成功色 - 通常是绿色"]
+        FC3["danger 危险色 - 通常是红色"]
+        FC4["attention 警告色 - 通常是黄色"]
     end
 
-    subgraph "第3层：语义色（Semantic Colors）"
+    subgraph "第3层：语义色 Semantic Colors"
         direction LR
-        SE1["--fgColor-accent<br/>强调色文字"]
-        SE2["--bgColor-accent-emphasis<br/>强调色强调背景"]
-        SE3["--borderColor-accent-muted<br/>强调色次要边框"]
+        SE1["--fgColor-accent 强调色文字"]
+        SE2["--bgColor-accent-emphasis 强调色强调背景"]
+        SE3["--borderColor-accent-muted 强调色次要边框"]
     end
 
     SC3 --> FC1
@@ -283,9 +283,9 @@ src/color-modes/themes/
 
 ```mermaid
 graph TB
-    A[WCAG 2.1 对比度要求] --> B["AA 级: ≥ 4.5:1<br/>（正常文字）"]
-    A --> C["AA 级: ≥ 3:1<br/>（大文字/图标）"]
-    A --> D["AAA 级: ≥ 7:1<br/>（最严格）"]
+    A["WCAG 2.1 对比度要求"] --> B["AA 级: 大于等于 4.5:1 正常文字"]
+    A --> C["AA 级: 大于等于 3:1 大文字/图标"]
+    A --> D["AAA 级: 大于等于 7:1 最严格"]
 
     style B fill:#2ea44f,stroke:#218838,color:#fff
     style C fill:#bf8700,stroke:#9a6700,color:#fff

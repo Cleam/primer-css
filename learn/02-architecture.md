@@ -53,12 +53,12 @@ Primer CSS 采用三层架构，这是理解整个项目的关键：
 
 ```mermaid
 graph LR
-    A[support/] --> B[variables/<br/>变量定义]
-    A --> C[mixins/<br/>可复用代码片段]
+    A["support/"] --> B["variables/ 变量定义"]
+    A --> C["mixins/ 可复用代码片段"]
 
-    B --> B1[typography.scss]
-    B --> B2[layout.scss]
-    B --> B3[misc.scss]
+    B --> B1["typography.scss"]
+    B --> B2["layout.scss"]
+    B --> B3["misc.scss"]
 
     style A fill:#6f42c1,stroke:#5a32a3,color:#fff
 ```
@@ -197,22 +197,22 @@ Primer CSS 将组件组织成三个包，便于按需加载：
 
 ```mermaid
 graph TB
-    ALL[index.scss<br/>完整包]
-    ALL --> CORE[core/<br/>核心包]
-    ALL --> PROD[product/<br/>产品包]
-    ALL --> MKT[marketing/<br/>营销包]
+    ALL["index.scss - 完整包"]
+    ALL --> CORE["core/ - 核心包"]
+    ALL --> PROD["product/ - 产品包"]
+    ALL --> MKT["marketing/ - 营销包"]
 
-    CORE --> C1[base 基础样式]
-    CORE --> C2[buttons 按钮]
-    CORE --> C3[forms 表单]
-    CORE --> C4[utilities 工具类]
-    CORE --> C5[...更多核心组件]
+    CORE --> C1["base 基础样式"]
+    CORE --> C2["buttons 按钮"]
+    CORE --> C3["forms 表单"]
+    CORE --> C4["utilities 工具类"]
+    CORE --> C5["...更多核心组件"]
 
-    PROD --> P1[产品特定样式]
+    PROD --> P1["产品特定样式"]
 
-    MKT --> M1[marketing/buttons]
-    MKT --> M2[marketing/type]
-    MKT --> M3[marketing/utilities]
+    MKT --> M1["marketing/buttons"]
+    MKT --> M2["marketing/type"]
+    MKT --> M3["marketing/utilities"]
 
     style ALL fill:#0969da,stroke:#0550ae,color:#fff
     style CORE fill:#2ea44f,stroke:#218838,color:#fff
@@ -326,8 +326,8 @@ Primer CSS 的架构体现了几个重要的设计原则：
 
 ```mermaid
 graph TB
-    A["无约束: 颜色随便选<br/>margin 随便写"] --> B["结果: 混乱、不一致"]
-    C["有约束: 只能用设计令牌<br/>间距只有固定刻度"] --> D["结果: 统一、可预测"]
+    A["无约束: 颜色随便选, margin 随便写"] --> B["结果: 混乱、不一致"]
+    C["有约束: 只能用设计令牌, 间距只有固定刻度"] --> D["结果: 统一、可预测"]
 
     style B fill:#cf222e,stroke:#a40e26,color:#fff
     style D fill:#2ea44f,stroke:#218838,color:#fff

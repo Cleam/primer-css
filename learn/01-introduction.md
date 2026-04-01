@@ -14,11 +14,11 @@
 
 ```mermaid
 graph TB
-    A[Primer 设计系统] --> B[设计原则 & 规范]
-    A --> C[设计令牌<br/>@primer/primitives]
-    A --> D[CSS 实现<br/>@primer/css]
-    A --> E[React 组件<br/>@primer/react]
-    A --> F[Rails 组件<br/>primer/view_components]
+    A["Primer 设计系统"] --> B["设计原则和规范"]
+    A --> C["设计令牌 primer/primitives"]
+    A --> D["CSS 实现 primer/css"]
+    A --> E["React 组件 primer/react"]
+    A --> F["Rails 组件 primer/view_components"]
 
     style D fill:#0969da,stroke:#0550ae,color:#fff
 ```
@@ -45,7 +45,7 @@ Primer CSS 是整个 Primer 设计系统中的一个核心部分，它负责**�
 
 ```mermaid
 mindmap
-  root((Primer CSS<br/>核心价值))
+  root(("Primer CSS 核心价值"))
     一致性
       统一的视觉语言
       可预测的用户体验
@@ -154,11 +154,11 @@ Primer CSS 的源码使用 **SCSS**（Sass 的一种语法）编写。这是因�
 
 ```mermaid
 graph LR
-    A[为什么用 SCSS?] --> B[变量系统<br/>$color: blue]
-    A --> C[嵌套规则<br/>减少重复]
-    A --> D[Mixin 复用<br/>@mixin 模式]
-    A --> E[模块化导入<br/>@import 分模块]
-    A --> F[运算能力<br/>$size * 2]
+    A["为什么用 SCSS?"] --> B["变量系统 如 $color"]
+    A --> C["嵌套规则 减少重复"]
+    A --> D["Mixin 复用 可复用模式"]
+    A --> E["模块化导入 分模块管理"]
+    A --> F["运算能力 如 $size x 2"]
 ```
 
 > 💡 **为什么不用原生 CSS？** 虽然现代 CSS 已经有了变量（Custom Properties），但 SCSS 的 mixin、函数、模块化能力在大型项目中依然更强大。而且 Primer CSS 巧妙地将 SCSS 变量与 CSS 自定义属性结合使用——SCSS 负责编译时计算，CSS 自定义属性负责运行时主题切换。
@@ -167,11 +167,11 @@ graph LR
 
 ```mermaid
 graph LR
-    A[SCSS 源码] -->|postcss-scss| B[PostCSS 解析]
-    B -->|postcss-import| C[处理 @import]
-    C -->|postcss-sass| D[编译 Sass]
-    D -->|autoprefixer| E[添加浏览器前缀]
-    E --> F[输出 CSS 文件]
+    A["SCSS 源码"] -->|"postcss-scss"| B["PostCSS 解析"]
+    B -->|"postcss-import"| C["处理 import"]
+    C -->|"postcss-sass"| D["编译 Sass"]
+    D -->|"autoprefixer"| E["添加浏览器前缀"]
+    E --> F["输出 CSS 文件"]
 
     style A fill:#cc6699,stroke:#993366,color:#fff
     style F fill:#2ea44f,stroke:#218838,color:#fff
